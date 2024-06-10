@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Invitación</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            text-decoration: none;
+        }
+        .button.no {
+            background-color: #dc3545;
+        }
+        .button:hover {
+            opacity: 0.8;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Invitación para una espectacular tarde de piojito</h1>
+        <div class="image-container">
+            <img src="imagen/piolin.jpg" alt="Imagen de invitación">
+        </div>
+        <p>¿Asistirás?</p>
+        <div class="buttons">
+            <button class="button" onclick="response('Sí')">Sí</button>
+            <button class="button no" onclick="response('No')">No</button>
+        </div>
+    </div>
+
+    <script>
+        function response(answer) {
+            alert("Has seleccionado: " + answer);
+        }
+    </script>
+</body>
+</html>
